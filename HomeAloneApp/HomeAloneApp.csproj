@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="obj\HomeAloneLibrary\HomeAloneLibrary.csproj">
+      <Project>{D28E3FA7-7FE5-403C-ABA3-6F1AAAF0CD16}</Project>
+      <Name>HomeAloneLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
