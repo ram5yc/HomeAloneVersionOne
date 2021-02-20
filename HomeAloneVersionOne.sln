@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.1300
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAloneApp", "HomeAloneApp\HomeAloneApp.csproj", "{8A198524-84DB-44DD-9CA0-9647FECE7C25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAloneLibrary", "HomeAloneApp\obj\HomeAloneLibrary\HomeAloneLibrary.csproj", "{D28E3FA7-7FE5-403C-ABA3-6F1AAAF0CD16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAloneLibrary", "HomeAloneLibrary\HomeAloneLibrary.csproj", "{D28E3FA7-7FE5-403C-ABA3-6F1AAAF0CD16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

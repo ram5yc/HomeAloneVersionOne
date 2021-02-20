@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A198524-84DB-44DD-9CA0-9647FECE7C25}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>HomeAloneApp</RootNamespace>
-    <AssemblyName>HomeAloneApp</AssemblyName>
+    <ProjectGuid>{D28E3FA7-7FE5-403C-ABA3-6F1AAAF0CD16}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HomeAloneLibrary</RootNamespace>
+    <AssemblyName>HomeAloneLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -43,17 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="Combat.cs" />
+    <Compile Include="Location.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Villain.cs" />
+    <Compile Include="Weapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HomeAloneLibrary\HomeAloneLibrary.csproj">
-      <Project>{d28e3fa7-7fe5-403c-aba3-6f1aaaf0cd16}</Project>
-      <Name>HomeAloneLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
