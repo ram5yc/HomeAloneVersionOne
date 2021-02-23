@@ -21,11 +21,11 @@ namespace HomeAloneLibrary
         }
         public override string ToString()
         {
-            return string.Format("{0}\nYou will need {1} items to get out of {2}. Click P to pick up items.",
+            return string.Format("{0}\nYou will need {1} items to get out of {2}.",
                 Description,
                 Items,
                 Place);
-
+            
         }
     }
 }

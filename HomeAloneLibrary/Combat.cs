@@ -11,7 +11,7 @@ namespace HomeAloneLibrary
         public static void DoAttack(Character attacker, Character defender)
         {
             Random rand = new Random();
-            int randomRoll = rand.Next(1, 101);
+            int randomRoll = rand.Next(1, 51);
             System.Threading.Thread.Sleep(40);
             if (randomRoll <= attacker.CalcHitChance() - defender.CalcBlock())
             {
@@ -20,12 +20,12 @@ namespace HomeAloneLibrary
                 defender.Life -= damageDealt;
 
                 Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine($"{attacker.Name} hit {defender.Name} and was injured + ${ damageDealt}");
+                Console.WriteLine($"{attacker.Name} hit {defender.Name} with his signature {attacker.Weapon.Name} and was injured {damageDealt} points");
                 Console.ResetColor();
             }//end if
             else
             {
-                Console.WriteLine($"{attacker.Name} missed!");
+                Console.WriteLine($"{attacker.Name} missed!\n");
             }//end else
         }//end Attack()
 

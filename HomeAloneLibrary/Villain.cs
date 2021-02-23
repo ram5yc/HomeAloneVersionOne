@@ -9,7 +9,6 @@ namespace HomeAloneLibrary
     public class Villain : Character
     {
         private int _minDamage;
-        private List<Weapon> _equippedWeapon;
 
         public int MaxDamage { get; set; }
         public string Description { get; set; }
@@ -21,9 +20,8 @@ namespace HomeAloneLibrary
                 _minDamage = value > 0 && value <= MaxDamage ? value : 1; //says damage is greater than 0 and is less than max damage or 1
             }//end set
         }//end MinDamage
-        public Weapon Weapon { get; set; }
 
-        public Villain(string name, int speed, int life, int maxLife, int minLife, int hitchance, int maxDamage, string description, int minDamage, int hitChance, int block) : base(name, speed, life, maxLife, minLife, hitChance, block)
+        public Villain(string name, int speed, int life, int maxLife, int minLife, int hitchance, int maxDamage, string description, int minDamage, int hitChance, int block, Weapon weapon) : base(name, speed, life, maxLife, minLife, hitChance, block, weapon)
         {
             MaxDamage = maxDamage;
             MinDamage = MinDamage;

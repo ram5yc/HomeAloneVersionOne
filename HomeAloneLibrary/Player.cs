@@ -9,10 +9,10 @@ namespace HomeAloneLibrary
     public class Player : Character
     {
 
-        public Weapon Weapon { get; set; }
+
         public int Items { get; set; }
 
-        public Player(string name, int life, int speed, Weapon weapon, int maxLife, int minLife, int hitChance, int block) : base(name, speed, life, maxLife, minLife, hitChance, block)
+        public Player(string name, int life, int speed, Weapon weapon, int maxLife, int minLife, int hitChance, int block) : base(name, speed, life, maxLife, minLife, hitChance, block, weapon)
         {
             Weapon = weapon;
             Items = 0;
@@ -20,7 +20,7 @@ namespace HomeAloneLibrary
         }//FQCTOR
         public override string ToString()
         {
-            return string.Format("{0}\nLife: {1}\nSpeed: {2}\nMaxLife: {3}\nMinLife: {4}\nWeapon: {5}\nItems Collected: {6}",
+            return string.Format("{0}\nLife: {1}\nSpeed: {2}\nMaxLife: {3}\nMinLife: {4}\nWeapon: {5}\nItems Collected: {6}\n",
                 Name,
                 Life,
                 Speed,
@@ -38,7 +38,7 @@ namespace HomeAloneLibrary
         }
         public override int CalcHitChance()
         {
-            return CalcHitChance();
+            return HitChance;
         }//end CalcHitChance()
     }
 }

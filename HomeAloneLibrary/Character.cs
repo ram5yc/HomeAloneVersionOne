@@ -16,6 +16,7 @@ namespace HomeAloneLibrary
         public int MinLife { get; set; }
         public int HitChance { get; set; }
         public int Block { get; set; }
+        public Weapon Weapon { get; set; }
 
 
         public int Life
@@ -26,16 +27,17 @@ namespace HomeAloneLibrary
                 _life = value <= MaxLife ? value : MaxLife;
             }
         }
-        public Character(string name, int speed, int life, int maxLife, int minLife, int hitChance, int block)
+        public Character(string name, int speed, int life, int maxLife, int minLife, int hitChance, int block, Weapon weapon)
         {
 
             Name = name;
             Speed = speed;
-            Life = life;
             MaxLife = maxLife;
+            Life = life;
             MinLife = minLife;
             HitChance = hitChance;
             Block = block;
+            Weapon = weapon;
        
 
         }
